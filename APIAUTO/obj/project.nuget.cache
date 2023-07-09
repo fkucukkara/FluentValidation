@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GpVumYupOUVHJq4rYSAVzkb+OQLogXC2L4HhiW4kbNeFDwQornH30V8zkvDU5PNhl48I7lRxYUB5igk2y3A40Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fatih4452\\source\\repos\\FluentValidation\\APIAUTO\\APIAUTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fatih4452\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\fatih4452\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\fatih4452\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\fatih4452\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

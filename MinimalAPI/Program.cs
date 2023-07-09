@@ -1,0 +1,42 @@
+using FluentValidation;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddScoped<IValidator<Person>, PersonValidator>();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+
+app.MapPost("/person", async (IValidator<Person> validator, Person person) =>
+{
+    var validationResults = await validator.ValidateAsync(person);
+
+    if (!validationResults.IsValid)
+    {
+        return Results.ValidationProblem(validationResults.ToDictionary());
+    }
+
+    return Results.Ok(person);
+});
+
+app.Run();
+
+public class PersonValidator : AbstractValidator<Person>
+{
+    public PersonValidator()
+    {
+        RuleFor(x => x.Id).NotNull();
+        RuleFor(x => x.Name).NotNull().Length(0, 10);
+        RuleFor(x => x.Email).NotNull().EmailAddress();
+        RuleFor(x => x.Age).InclusiveBetween(18, 60);
+    }
+}
+public record Person
+{
+    public int Id { get; set; }
+    public string? Name { get; set; }
+    public string? Email { get; set; }
+    public int Age { get; set; }
+}
