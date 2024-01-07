@@ -61,3 +61,4 @@ publish/
 packages/
 #except lib folder
 !**/lib/
+/.vs/FluentValidation/v17/.suo
