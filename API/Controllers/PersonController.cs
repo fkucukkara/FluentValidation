@@ -7,20 +7,17 @@ namespace API.Controllers
     [Route("[controller]")]
     public class PersonController : ControllerBase
     {
-        private readonly ILogger<PersonController> _logger;
         private readonly IValidator<Person> _validator;
-
-        public PersonController(ILogger<PersonController> logger, IValidator<Person> validator)
+        public PersonController(IValidator<Person> validator)
         {
-            _logger = logger;
             _validator = validator;
         }
-
 
         [HttpPost]
         public async Task<IActionResult> Post(Person person)
         {
             var result = await _validator.ValidateAsync(person);
+
             if (result.IsValid == false)
             { return BadRequest(result); }
 
@@ -37,12 +34,7 @@ namespace API.Controllers
                 RuleFor(x => x.Age).InclusiveBetween(18, 60);
             }
         }
-        public record Person
-        {
-            public int Id { get; set; }
-            public string? Name { get; set; }
-            public string? Email { get; set; }
-            public int Age { get; set; }
-        }
+
+        public record Person(int Id, string Name, string Email, int Age);
     }
 }

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI", "MinimalAPI\MinimalAPI.csproj", "{0D3087AE-7C19-406C-8F69-DBB73155D1D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalAPI", "MinimalAPI\MinimalAPI.csproj", "{0D3087AE-7C19-406C-8F69-DBB73155D1D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{7B55179B-C1AD-49F6-A732-73BEFF6092C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "API\Api.csproj", "{7B55179B-C1AD-49F6-A732-73BEFF6092C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIAUTO", "APIAUTO\APIAUTO.csproj", "{038FC5B4-5C16-46E7-93CE-D20F9BC40537}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiAutoValidation", "APIAUTO\ApiAutoValidation.csproj", "{038FC5B4-5C16-46E7-93CE-D20F9BC40537}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

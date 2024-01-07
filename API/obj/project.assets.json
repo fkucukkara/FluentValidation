@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net8.0": {
       "FluentValidation/11.5.1": {
         "type": "package",
         "compile": {
@@ -142,37 +142,36 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net8.0": [
       "FluentValidation.AspNetCore >= 11.3.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fatih4452\\.nuget\\packages\\": {}
+    "C:\\Users\\Fatih_Kucukkara\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fatih4452\\source\\repos\\FluentValidation\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Fatih_Kucukkara\\source\\github\\FluentValidation\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\fatih4452\\source\\repos\\FluentValidation\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\fatih4452\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fatih4452\\source\\repos\\FluentValidation\\API\\obj\\",
+      "projectPath": "C:\\Users\\Fatih_Kucukkara\\source\\github\\FluentValidation\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Fatih_Kucukkara\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fatih_Kucukkara\\source\\github\\FluentValidation\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fatih4452\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Fatih_Kucukkara\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -183,8 +182,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "FluentValidation.AspNetCore": {
             "target": "Package",
@@ -210,7 +209,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
